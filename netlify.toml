@@ -1,0 +1,9 @@
+[build]
+  publish = "public"
+  command = "cd themes/ananke && npm install && npm run build && cd ../.. && hugo"
+
+[context.production.environment]
+  NODE_VERSION = "18"
+  HUGO_VERSION = "0.145.0"
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"
