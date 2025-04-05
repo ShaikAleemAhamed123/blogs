@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "cd themes/ananke && npm install && npm run build && cd ../.. && hugo"
+  command = "cd themes/ananke && npm install && cd ../.. && hugo"
 
 [context.production.environment]
   NODE_VERSION = "23.11.0"
